@@ -36,24 +36,12 @@ ng build
 
 This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
 
-## Running unit tests
+-----
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+## Composant
 
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Un composant Angular est composé au minimum d'une classe TypeScript et d'un template HTML.
+- La classe TypeScript d'un composant s'occupe d'initialiser et de manipuler un ensemble de données. On parle de 'state'.
+- Le template HTML d'un composant s'occupe d'afficher les données du composant à l'utilisateur et d'écouter les évènements souhaités.
+- On utilise l'annotation **@Component** pour indiquer à Angular qu'une classe est un composant.
+- Une propriété d'un composant peut être initialisée directement par une valeur simple lors de sa déclaration.

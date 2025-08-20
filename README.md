@@ -60,3 +60,12 @@ Pour tirer pleinement partie des signals, Angular fournit plusieurs fontions uti
 - Pour modifier un signal, utilisez **set** pour remplacer sa valeur ou **update** pour la mettre à jour.
 - Si vous devez mettre à jour une valeur simple (chaîne, nombre, booléen), utilisez **set()**.
 - Si la nouvelle valeur est basée sur la précédente, utilisez **update()**.
+
+## Liaison de données
+
+On peut lier les données d’un composant vers un template grâce à 4 types de liaisons différentes : une propriété, un attribut, une classe ou une règle de style.
+
+- On peut afficher une image de deux manières dans un projet Angular : depuis un serveur distant ou en ajoutant l’image dans le dossier assets de notre projet.
+- La syntaxe @if permet de conditionner l’affichage d’éléments dans le template.
+- La syntaxe @for permet d’afficher une liste d’éléments contenus dans un tableau.
+- Essayez d’éviter de mettre la logique de votre application dans vos templates. Gardez-les les plus simples possible !

@@ -45,3 +45,18 @@ Un composant Angular est composé au minimum d'une classe TypeScript et d'un tem
 - Le template HTML d'un composant s'occupe d'afficher les données du composant à l'utilisateur et d'écouter les évènements souhaités.
 - On utilise l'annotation **@Component** pour indiquer à Angular qu'une classe est un composant.
 - Une propriété d'un composant peut être initialisée directement par une valeur simple lors de sa déclaration.
+
+## Signal
+
+Les signaux sont un concept clé introduit dans Angular 16 et stable depuis Angular 17. Ils permettent de gérer efficacement les données réactives dans une application Angular, en propageant automatiquement les changements de données dans l'interface utilisateur.
+
+Pour tirer pleinement partie des signals, Angular fournit plusieurs fontions utilitaires comme *set* ou *update* pour modifier la valeur d'un signal, *computed* pour créer des signals dérivés ou encore *effect* pour exécuter du code spécifique en réponse lorsque certains signals changent de valeur.
+
+- Les signaux font partie d'une tendance de fond visant à implémenter la réactivité en interne dans les frameworks frontend.
+- Un signal est un conteneur pour une valeur qui peut changer au fil du temps.
+- **signal** est une fonction qui crée un nouveau signal, et on utilise les paranthèses pour accèder à sa valeur.
+- **computed** permet de créer des signaux dérivés à partir d'autres signaux.
+- **effect** exécute du code côté effets en réponse aux changements de signaux.
+- Pour modifier un signal, utilisez **set** pour remplacer sa valeur ou **update** pour la mettre à jour.
+- Si vous devez mettre à jour une valeur simple (chaîne, nombre, booléen), utilisez **set()**.
+- Si la nouvelle valeur est basée sur la précédente, utilisez **update()**.
